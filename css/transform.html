@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .v{
+            background-color: greenyellow;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+        }
+
+        .care{
+            width: 100px;
+        height: 100px;
+        background-color:blue;
+        transition: 1s;
+        animation-name: Surya;
+        animation-duration: 4s;
+        animation-delay: 0.5s;
+        /* animation-timing-function: ease-in; */
+        animation-iteration-count: infinite;
+        position: relative;
+        transition: 2s;
+        }
+        .care:hover{
+            background-color: antiquewhite;
+            border-radius: 20%;
+            /* transform:translate(500px); */
+            /* transform:skewX(60deg); */
+            /* transform:scaleY(4); */
+            /* transform:rotateX(90deg) */
+;
+        }
+
+        @keyframes Surya{
+            /* form{
+                top: 0;
+                left: 0;
+            }
+            to{
+                top: 100px;
+                left: 100px;
+            } */
+
+
+            0%{
+                top: 0;
+                left: 0;
+            }
+            25%{
+                left: 100px;
+                top: 0;
+            }
+            50%{
+                left: 100px;
+                top: 100px;
+            }
+            75%{
+                left: 0;
+                top: 100px;
+            }
+            100%{
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="v">
+        <div class="care"></div>
+    </div>
+</body>
+</html>

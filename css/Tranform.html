@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="home">
+        <div class="child"></div>
+    </div>
+    
+</body>
+</html>
+
+<style>
+    .home{
+        background-color: yellow;
+    }
+    .child{
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        transition: 2s;
+    }
+
+    .child:hover{
+        background-color: pink;
+        border-radius: 50%;
+        /* transform: translateY(400px); */
+        /* transform: skewX(45deg); */
+        /* transform: scaleY(2); */
+        transform: rotateZ(-180deg);
+    }
+</style>
