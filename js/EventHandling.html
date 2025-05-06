@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="LL()" onresize="Ress()" onscroll="Scr()">
+    
+
+<p onclick="OneClick()" 
+ondblclick="TwoClick()"
+onmousedown="MouseDown()"
+onmouseenter="MouseEnter()"
+onmouseleave="MouseLeave()"
+onmousemove="MouseMove()"
+onmouseout="MouseOut()"
+onmouseover="MouseOver()"
+onmouseup="MouseUp()"
+>Lorem ipsum dolor sit.</p>
+<input type="text" onkeydown="KeyDwon()" 
+onkeyup="KeyUp()" onkeypress="KeyPress()"> 
+
+
+<form onsubmit="Sub()" onreset="Res()">
+    <input type="text" onfocus="Fu()" onblur="Ble()" id="user">
+    <input type="submit">
+    <input type="reset">
+</form>
+
+<select name="" id="sel" onchange="Chh()">
+    <option value="BMW">BMW</option>
+    <option value="AUDI">AUDI</option>
+    <option value="KIA">KIA</option>
+</select>
+
+<input type="text" 
+
+oncopy="Cpy()" value="Surya"
+>
+
+<input type="text" oncut="CT()"  value=" Surya">
+
+<input type="text" onpaste="Pst()">
+
+</body>
+</html>
+<script>
+
+    function CT(){
+        console.log('Cutted..');
+        
+    }
+    function Cpy(){
+
+        console.log("Coppiued.");
+        
+    }
+    function Pst(){
+        console.log("Paste...");
+        
+    }
+
+    function Ress(){
+        console.log("resized...");
+        
+    }
+    function Scr(){
+        console.log("Scrolling...");
+        
+    }
+    function LL(){
+        // alert('Warning')
+    }
+
+    let sel = document .getElementById('sel');
+
+    function Chh(){
+        console.log(sel.value);
+        
+    }
+
+
+let user = document.getElementById('user');
+
+function Fu(){
+    user.style.backgroundColor='yellow'
+}
+
+function Ble(){
+    user.style.backgroundColor='red'
+}
+
+
+function Sub(){
+    console.log("data aedd..");
+    
+}
+function Res(){
+    console.log("data deleetd..");
+    
+}
+
+
+function KeyDwon(){
+    console.log("KeyDwon");
+    
+}
+function KeyUp(){
+    console.log("KeyUp");
+    
+}
+function KeyPress(){
+    console.log("KeyPress");
+    
+}
+
+    function OneClick(){
+        console.log("One Time Clicked..");
+        
+    }
+    function TwoClick(){
+        console.log("TwoClick");
+        
+    }
+    function MouseDown(){
+        console.log('MouseDown');
+        
+    }
+    function MouseUp(){
+        console.log("MouseUp");
+        
+    }function MouseEnter(){
+        console.log("MouseEnter");
+        
+    }
+    function MouseLeave(){
+        console.log("MouseLeave");
+        
+    }
+    function MouseMove(){
+        console.log("MouseMove");
+        
+    }
+    function MouseOut(){
+        console.log("MouseOut");
+        
+    }function MouseOver(){
+        console.log('MouseOver');
+        
+    }
+</script>

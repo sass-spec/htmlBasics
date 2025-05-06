@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="father">
+        <h1 id="sasi">Sasi</h1><h1 id="niv">nivetha</h1>
+    </div>
+
+    <script>
+        let father = document.getElementById('father');
+        let sasi = document.getElementById('sasi')
+        let nivetha = document.getElementById('niv')
+
+
+        console.log(father.children.length);
+        console.log(sasi.parentNode.nodeName);
+        console.log(sasi.nextSibling.textContent);
+        console.log(nivetha.previousSibling.innerText);
+
+        
+        let date = new Date();
+
+        date.setFullYear(1998)
+
+        console.log(date);
+        
+        console.log(date.getDate());
+        console.log(date.getDay());
+        console.log(date.getFullYear());
+        console.log(date.getHours());
+        console.log(date.getMonth());
+
+
+        let num = 100;
+
+        console.log(num.toExponential());
+        console.log(num.toFixed(2));
+        console.log(num.toPrecision(5));
+        console.log(num.toString());
+        
+        
+
+        
+
+
+
+        
+        
+        
+        
+    </script>
+</body>
+</html>
